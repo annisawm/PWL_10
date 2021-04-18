@@ -3,6 +3,7 @@
 @section('content')
     <div class="container">
         <form action="/articles/{{$article->id}}" method="POST" enctype="multipart/form-data">
+            @method('PUT')
             @csrf
             <div class="form-group">
                 <label for="title">Judul</label>
